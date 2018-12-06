@@ -27,11 +27,23 @@ class Vector(object):
             for n in self.elements
         ])
 
+    def __lt__(self, other):
+        return self.elements < other.elements
+
+    def __le__(self, other):
+        return self.elements <= other.elements
+
     def __eq__(self, other):
         return self.elements == other.elements
 
     def __ne__(self, other):
         return self.elements != other.elements
+
+    def __gt__(self, other):
+        return self.elements > other.elements
+
+    def __ge__(self, other):
+        return self.elements >= other.elements
 
     def __hash__(self):
         return hash(self.elements)
@@ -48,3 +60,6 @@ class Vector(object):
 
     def __next__(self):
         return next(self.iterator)
+
+    def __getitem__(self, item):
+        return self.elements[item]
