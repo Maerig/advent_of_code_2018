@@ -1,0 +1,16 @@
+0=seti
+1=eqir
+2=setr
+3=gtir
+4=addi
+5=muli
+6=mulr
+7=gtrr
+8=bani
+9=gtri
+10=bori
+11=banr
+12=borr
+13=eqri
+14=eqrr
+15=addr
